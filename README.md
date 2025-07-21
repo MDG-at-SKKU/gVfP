@@ -1,6 +1,6 @@
 # genVESTAfromPOSCAR
 
-This program is written to represent the properties of each atom (e.g. magnetic moment) by the color of each atom.
+This program is written to represent the properties of atoms (e.g. magnetic moment) by the color of each atom.
 * It takes the atomic structure as input (POSCAR, CIF, etc).
 * Outputs a VESTA format file.
 * Requires data to specify the color. (Red for positives, blue for negatives, white for 0.)
