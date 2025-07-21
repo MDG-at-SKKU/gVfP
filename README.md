@@ -15,5 +15,24 @@ If the name of your input structure file is `POSCAR`, run gVfp again. A `POSCAR.
 
 Indeed, you can open any structure file that the Atomic Simulation Environment (ASE) can open, other than `POSCAR` files (e.g. CIF). In this case, open `gVfP_config.ini` and modify the target file and result name.
 
+
+## Optional
+### Setting a color list file
+Example of color list file
+```
+-9
+26.0
+-31.2
+-8
+-22
+-12
+0
+4
+-20
+-40
+-7
+...
+```
+
 ## Link
 [Materials Design Group @ SKKU](https://sites.google.com/site/jsparkphys/home)
