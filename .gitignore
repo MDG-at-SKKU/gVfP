@@ -1,2 +1,11 @@
 genVESTAfromPOSCAR/__pycache__/__init__.cpython-313.pyc
 *.pyc
+color_list.txt
+gVfP_config.ini
+POSCAR.vesta
+gVfP.egg-info/entry_points.txt
+gVfP.egg-info/PKG-INFO
+gVfP.egg-info/requires.txt
+gVfP.egg-info/SOURCES.txt
+gVfP.egg-info/top_level.txt
+gVfP.egg-info/dependency_links.txt

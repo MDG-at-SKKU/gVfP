@@ -1,8 +1,14 @@
 from ase import io
 from ase.data import atomic_numbers, covalent_radii
+from genVESTAfromPOSCAR.tools.color import color_rgb_list_generator
 
-def genVESTAfromPOSCAR(filename,savename,color_data):
+def genVESTAfromPOSCAR(options):
+    filename = options["target file"]
+    savename = options["result name"]    
+    
     x = io.read(filename)
+    atoms_n = len(x)
+    color_data =color_rgb_list_generator(options["color list file"], length_n=atoms_n)
     
     a = open(savename,'w')
     a.write('#VESTA_FORMAT_VERSION 3.5.4\n\n\nCRYSTAL\n\nTITLE\n VESTA from POSCAR\n\nCELLP\n ')

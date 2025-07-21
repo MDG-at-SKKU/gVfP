@@ -3,11 +3,17 @@ import configparser
 
 config_base = """
 [Data Info]
-# target file : path of target file.  ex) POSCAR or Dataset/POSCAR
-target file = # Default(blank) is POSCAR
+# target file : path of target file.  ex) POSCAR or Dataset/POSCAR # Default(blank) is POSCAR
+target file = 
+
+[Color Setting]
+# color list file : path of color list file. Default(blank) is blank. It will set color randomly
+# IMPORTANT : Number of colors and number of atoms should be a same number
+color list file = 
 
 [Result File Option]
-result name = # Default(blank) is POSCAR.vesta
+$ result name : setting name of output file. # Default(blank) is POSCAR.vesta
+result name = 
 """
 
 def config_loader(config):
