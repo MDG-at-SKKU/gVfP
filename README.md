@@ -3,6 +3,8 @@
 ## How to use
 
 ```
+git clone https://github.com/MDG-at-SKKU/gVfP.git
+cd gVfP
 pip install -e .
 gvfp
 ```
