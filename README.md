@@ -18,7 +18,7 @@ gvfp
   
 ## How to use
 
-* Set `gVfP_config.ini`
+Set `gVfP_config.ini`
 
 ```
 [Data Info]
@@ -38,9 +38,9 @@ result name =
 version = 0.0.2
 ```
 
-* If the name of your input structure file is `POSCAR`, you don't have to specify. Indeed, you can open any structure file that the Atomic Simulation Environment (ASE) can open, other than `POSCAR` files (e.g. CIF). In this case, open `gVfP_config.ini` and modify the target file and result name.
+* Set `input file`. If the name of your input structure file is `POSCAR`, you don't have to specify. Indeed, you can open any structure file that the Atomic Simulation Environment (ASE) can open, other than `POSCAR` files (e.g. CIF). 
 
-* Prepare a file containing real numbers (float) for every atom (e.g. `color.txt`). The name of the data file (for specifying color) must also be set in the same configuration file (`color list file`). If not set, a random color is assigned.  
+* Prepare a file containing real numbers (float) for every atom (e.g. `color.txt`). The name of the data file (for specifying color) must also be set in the `gVfP_config.ini` file. If not set, a random color is assigned.  
 
 File format examples:
 ```
