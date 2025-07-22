@@ -19,7 +19,7 @@ gvfp
   
 ## How to use
 
-Set `gVfP_config.ini`
+* Set `gVfP_config.ini`
 
 ```
 [Data Info]
@@ -29,7 +29,7 @@ target file =
 [Color Setting]
 # color list file : path of color list file. Default(blank) is blank. It will set color randomly
 # IMPORTANT : Number of colors and number of atoms should be a same number
-color list file = 
+color list file = color.txt
 
 [Result File Option]
 # result name : setting name of output file. # Default(blank) is POSCAR.vesta
@@ -41,7 +41,7 @@ version = 0.0.2
 
 * Set `input file`. If the name of your input structure file is `POSCAR`, you don't have to specify. Indeed, you can open any structure file that the Atomic Simulation Environment (ASE) can open, other than `POSCAR` files (e.g. CIF). 
 
-* Prepare a file containing real numbers (float) for every atom (e.g. `color.txt`). The name of the data file (for specifying color) must also be set in the `gVfP_config.ini` file. If not set, a random color is assigned.  
+* Prepare a file containing real numbers for every atom (e.g. `color.txt`), and set the name of the data file (for specifying color) in the `gVfP_config.ini` file. If not set, a random color is assigned.  
 
 File format examples:
 ```
@@ -61,8 +61,7 @@ File format examples:
 
 * Set `result name`. If not, a `POSCAR.vesta` file will be created.
 
-* Run `gvfp` again.
-
+* Run `gvfp` again, and draw the generated vesta file using the VESTA program.
 
 ## Link
 [Materials Design Group @ SKKU](https://sites.google.com/site/jsparkphys/home)
