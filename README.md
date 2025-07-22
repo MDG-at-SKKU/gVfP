@@ -43,7 +43,7 @@ File format examples:
 ...
 ```
 
-Set the color list file in the gVfP_config.ini file.
+Set the color list file in the `gVfP_config.ini` file.
 ```
 [Data Info]
 # target file : path of target file.  ex) POSCAR or Dataset/POSCAR # Default(blank) is POSCAR
