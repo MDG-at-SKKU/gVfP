@@ -7,13 +7,14 @@ This program is written to represent the properties of atoms (e.g. magnetic mome
 
 ## Installation
 
+* `Python requires >= 3.13`
 ```
 git clone https://github.com/MDG-at-SKKU/gVfP.git
 cd gVfP
 pip install -e .
 gvfp
 ```
-* `Python requires >= 3.13`
+
 * For the first time, `gVfP_config.ini` will be generated automatically.
   
 ## How to use
