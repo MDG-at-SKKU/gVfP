@@ -24,9 +24,11 @@ Indeed, you can open any structure file that the Atomic Simulation Environment (
 The name of the data file (for specifying color) must be also set in the same configuration file.
 
 
-## Optional
-### Setting a color list file
-Example of color list file
+## Setting a color list file
+
+EPrepare a file containing real numbers (float) for every atom. 
+
+File format examples:
 ```
 -9
 26.0
@@ -40,6 +42,25 @@ Example of color list file
 -40
 -7
 ...
+```
+
+Set the color list file in the gVfP_config.ini file.
+```
+[Data Info]
+# target file : path of target file.  ex) POSCAR or Dataset/POSCAR # Default(blank) is POSCAR
+target file =
+
+[Color Setting]
+# color list file : path of color list file. Default(blank) is blank. It will set color randomly
+# IMPORTANT : Number of colors and number of atoms should be a same number
+color list file = 
+
+[Result File Option]
+# result name : setting name of output file. # Default(blank) is POSCAR.vesta
+result name =
+
+[Version]
+version = 0.0.2
 ```
 
 ## Link
