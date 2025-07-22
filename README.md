@@ -6,7 +6,6 @@ This program is written to represent the properties of atoms (e.g. magnetic mome
 * Requires data to specify the color. (Red for positives, blue for negatives, white for 0.)
 
 ## Installation
-`Python requires >= 3.13`
 
 ```
 git clone https://github.com/MDG-at-SKKU/gVfP.git
@@ -14,8 +13,8 @@ cd gVfP
 pip install -e .
 gvfp
 ```
-
-For the first time, `gVfP_config.ini` will be generated automatically.
+* `Python requires >= 3.13`
+* For the first time, `gVfP_config.ini` will be generated automatically.
   
 ## How to use
 
