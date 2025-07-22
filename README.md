@@ -18,7 +18,7 @@ gvfp
   
 ## How to use
 
-### gVfP_config.ini
+* Set `gVfP_config.ini`
 
 ```
 [Data Info]
