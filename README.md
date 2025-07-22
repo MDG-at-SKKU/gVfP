@@ -19,7 +19,7 @@ For the first time, `gVfP_config.ini` will be generated automatically.
   
 ## How to use
 
-### `gVfP_config.ini`
+### gVfP_config.ini
 
 ```
 [Data Info]
