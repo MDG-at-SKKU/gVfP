@@ -55,27 +55,28 @@ def config_loader(config):
 
 def config_is_exist():
     config = configparser.ConfigParser(inline_comment_prefixes="#")
-    try:
-        config.read("gVfP_config.ini")
+    
+    ini_file = config.read("gVfP_config.ini")
 
-    except:
+    if len(ini_file) == 0:
         with open('gVfP_config.ini', 'w', encoding='utf-8') as configfile:
             configfile.write(config_updator())
         print("Config file is created : gVfP_config.ini")
         print("Set options and then run this script")
         
         exit()
-        
-    try:
-        version_info = config.get("Version", "version")
-        version_match = version_ != version_info
-    except:
-        version_match = False
-    options = config_loader(config)
-    if version_match:
-        with open('gVfP_config.ini', 'w', encoding='utf-8') as configfile:
-            configfile.write(config_updator(options, for_update=True))
-        print("config file has been updated.")
-        print("Please check configurations.")
-        exit()
-    return options
+    else:
+            
+        try:
+            version_info = config.get("Version", "version")
+            version_match = version_ != version_info
+        except:
+            version_match = False
+        options = config_loader(config)
+        if version_match:
+            with open('gVfP_config.ini', 'w', encoding='utf-8') as configfile:
+                configfile.write(config_updator(options, for_update=True))
+            print("config file has been updated.")
+            print("Please check configurations.")
+            exit()
+        return options
